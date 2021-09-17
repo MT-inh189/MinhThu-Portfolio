@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+			$('#header__mobile-icon').click(function(){
+				$('.header__list').toggleClass('show');
+			});
+		});
+    </script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$('.darkmode').click(function(){
+                $('body').toggleClass('dark')
+    			$('.main').toggleClass('dark')
+    			$('.container').toggleClass('dark')
+    			$('.darkmode').toggleClass('active')
+    			$('.introduce').toggleClass('dark')
+    			$('.introduce__description').toggleClass('dark')
+    			$('.introduce__description-text1').toggleClass('dark')
+    			$('.introduce__description-text2').toggleClass('dark')
+    			$('.introduce__description-text2sub').toggleClass('dark')
+    			$('.introduce__description-text3').toggleClass('dark')
+    			$('.section').toggleClass('dark')
+    			$('.section__heading').toggleClass('dark')
+    			$('.section__para').toggleClass('dark')
+    			$('.section__folder-item-amout').toggleClass('dark')
+    			$('.section__skill-name').toggleClass('dark')
+    			$('.section__skill-icon').toggleClass('dark')
+    			$('.life').toggleClass('dark')
+    			$('.life__title-heading').toggleClass('dark')
+    			$('.favour').toggleClass('dark')
+    			$('.favour__heading-label').toggleClass('dark')
+    			$('.favour__content-title').toggleClass('dark')
+                $('.background-slider').toggleClass('dark')
+                $('.footer').toggleClass('dark')
+    		})
+    	})
+    </script>
+    <script type="text/javascript">
+    	$(window).scroll(function(){
+    		var scroll = $(window).scrollTop(),
+    		dh = $(document).height(),
+    		wh = $(window).height();
+    		scrollPercent = (scroll / (dh-wh)) * 100;
+    		$('#scrollbar').css('height', scrollPercent + '%');
+    	})
+    </script>
+    <title>MinhThu Portfolio</title>
+</head>
+<body>
+	<div id="scrollbar"></div>
+    <div class="main" style="height: 1500px">
+    	<header class="header">
+    		<div class="header__nav">
+    			<div class="header__nav-logo">
+    				<img src="./assets/image/logo.webp" class="header__logo-img">
+    			</div>
+    			<ul class="header__list">
+    				<li class="header__item">
+    					<a href="#" class="header__item-link">Home</a>
+    				</li>
+    				<li class="header__item">
+    					<a href="#partabout" class="header__item-link">About</a>
+    				</li>
+    				<li class="header__item">
+    					<a href="#" class="header__item-link">Contact</a>
+    				</li>
+    			</ul>
+    			<ul class="darkmode">
+    				<li class="darkmode-btn">
+    					<span class="darkmode-title">Dark</span>
+    					<span class="darkmode-title">Light</span>
+    				</li>
+    			</ul>
+    			<!-- Menu mobile -->
+    			<div class="header__mobile-menu">
+    				<i class="fal fa-bars" id="header__mobile-icon"></i>
+    			</div>
+    		</div>
+    	</header>
+
+    	<div class="background-main">
+    		<div class="introduce">
+	    		<div class="introduce__ava">
+	    			<img src="./assets/image/smileinroom2.jpg" class="introduce__ava-img">
+	    		</div>
+
+	    		<div class="introduce__description" style="width: 30%">
+	    			<h6 class="introduce__description-text1">Hello everybody, i am</h6>
+	    			<h3 class="introduce__description-text2" id="type" style="margin-bottom: 0 !important">TruongThi</h3>
+	    			<h3 class="introduce__description-text2sub">MinhThu</h3>
+	    			<h4 class="introduce__description-text3">Student</h4>
+	    			<p class="introduce__description-text4">Let smile, because it is the cheapest medicine for life.</p>
+	    			<ul class="introduce__description-list">
+	    				<li class="introduce__description-item">
+	    					<a href="" class="introduce__description-link">
+	    						<i class="fal fa-calendar-alt introduce__description-icon"></i>
+	    						18 st November, 2020
+	    					</a>
+	    				</li>
+	    				<li class="introduce__description-item">
+	    					<a href="" class="introduce__description-link">
+	    						<i class="fal fa-phone-alt introduce__description-icon"></i>
+	    						032 93 83 xxx
+	    					</a>
+	    				</li>
+	    				<!-- <li class="introduce__description-item">
+	    					<a href="" class="introduce__description-link">
+	    						<i class="fal fa-envelope introduce__description-icon"></i>
+	    						28index.react1811@gmail.com
+	    					</a>
+	    				</li> -->
+	    				<li class="introduce__description-item">
+	    					<a href="" class="introduce__description-link">
+	    						<i class="fal fa-home-lg-alt introduce__description-icon"></i>
+	    						ThuDuc, HoChiMinh City
+	    					</a>
+	    				</li>
+	    			</ul>
+	    			<ul class="introduce__description-social">
+	    				<li class="introduce__description-icon">
+	    					<a href="https://www.facebook.com/truongthi.minhthu.71" class="introduce__social-link">
+	    						<i class="fab fa-facebook-f introduce__social-icon"></i>
+	    					</a>
+	    				</li>
+	    				<li class="introduce__description-icon">
+	    					<a href="https://www.instagram.com/doris_1811_/" class="introduce__social-link">
+	    						<i class="fab fa-instagram introduce__social-icon"></i>
+	    					</a>
+	    				</li>
+	    				<!-- <li class="introduce__description-icon">
+	    					<a href="https://github.com/MT-inh189" class="introduce__social-link">
+	    						<i class="fab fa-github introduce__social-icon"></i>
+	    					</a>
+	    				</li> -->
+	    			</ul>
+	    		</div>
+    		</div>
+    	</div>
+
+    	<!-- Container -->
+    	<div class="container">
+    		<div class="section row" id="partabout">
+    			<div class="col col-half section__about">
+    				<h4 class="section__heading">About Myself</h4>
+    				<p class="section__para">Hello, i'm sure you know who i am so i'll tell you about other things you don't know. I have a family with four people consists of my father, mother, brother and me, my favourite things are singing, cooking and talk with friends. If you want to know more about myself, why dont't you go to my accout and says some things? I will waiting for you over there.</p>
+    				<div class="section__folder row">
+    					<div class="col col-third section__folder-human">
+    						<div class="section__folder-item">
+    							<i class="fal fa-thumbs-up section__folder-icon" style="padding-top: 2px"></i>
+    							<h4 class="section__folder-item-amout">70%</h4>
+    							<p class="section__folder-des">Tenderness</p>
+    						</div>
+    					</div>
+
+    					<div class="col col-third section__folder-human">
+    						<div class="section__folder-item">
+    							<i class="fal fa-check section__folder-icon"></i>
+    							<h4 class="section__folder-item-amout">20%</h4>
+    							<p class="section__folder-des">Sociable</p>
+    						</div>
+    					</div>
+
+    					<div class="col col-third section__folder-human">
+    						<div class="section__folder-item">
+    							<i class="far fa-heart section__folder-icon"></i>
+    							<h4 class="section__folder-item-amout">10%</h4>
+    							<p class="section__folder-des">Cutes</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+
+    			<!-- Skills -->
+    			<div class="col col-half section__job">
+    				<div class="section__skill" id="skills-section">
+    					<!-- Photography -->
+    					<div class="section__skill-item">
+    						<h4 class="section__skill-name">
+    							COOKING 60%
+    							<i class="fal fa-utensils-alt section__skill-icon"></i>
+    						</h4>
+    						<div class="section__skill-box">
+    							<div class="section__skill-rate">
+    								<div class="section__skill-progress" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%" data-progress="55"></div>
+    							</div>
+    						</div>
+    					</div>
+    					<!-- Html -->
+    					<div class="section__skill-item">
+    						<h4 class="section__skill-name">
+    							LEARNING MATH 85%
+    							<i class="fal fa-function section__skill-icon"></i>
+    						</h4>
+    						<div class="section__skill-box">
+    							<div class="section__skill-rate">
+    								<div class="section__skill-progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%" data-progress="90"></div>
+    							</div>
+    						</div>
+    					</div>
+    					<!-- Css -->
+    					<div class="section__skill-item">
+    						<h4 class="section__skill-name">
+    							SINGING 40%
+    							<i class="fal fa-music section__skill-icon"></i>
+    						</h4>
+    						<div class="section__skill-box">
+    							<div class="section__skill-rate">
+    								<div class="section__skill-progress" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" style="width: 82%" data-progress="82"></div>
+    							</div>
+    						</div>
+    					</div>
+    					<!-- Javascript -->
+    					<div class="section__skill-item">
+    						<h4 class="section__skill-name">
+    							HUMOR 64%
+    							<i class="far fa-grin-beam section__skill-icon"></i>
+    						</h4>
+    						<div class="section__skill-box">
+    							<div class="section__skill-rate">
+    								<div class="section__skill-progress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%" data-progress="70"></div>
+    							</div>
+    						</div>
+    					</div>
+
+    					<!-- <div class="section__skill-item">
+    						<h4 class="section__skill-name">
+    							GITHUB 30%
+    							<i class="fab fa-github section__skill-icon"></i>
+    						</h4>
+    						<div class="section__skill-box">
+    							<div class="section__skill-rate">
+    								<div class="section__skill-progress" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%" data-progress="30"></div>
+    							</div>
+    						</div>
+    					</div> -->
+    				</div>
+    			</div>
+    		</div>
+
+    		<!-- My Jouney -->
+    		<div class="jouney">
+    			<div class="jouney__box">
+    				<ul class="jouney__box-list">
+    					<!-- Reading books -->
+    					<li class="jouney__box-item">
+    						<span></span>
+    						<div class="jouney__events">
+    							<div class="jouney__events-date" style="padding-right: 88px !important">
+    								<p class="jouney__events-data">September 2019</p>
+    							</div>
+    							<div class="jouney__events-work">
+    								<h4 class="jouney__events-name">Gradute High School</h4>
+    								<p class="jouney__events-para">This is very difficult period for me when i have to deal with grades and college entrance exams.</p>
+    							</div>
+    						</div>
+    					</li>
+    					<!-- Coding -->
+    					<li class="jouney__box-item">
+    						<span></span>
+    						<div class="jouney__events">
+    							<div class="jouney__events-date">
+    								<p class="jouney__events-data">September 2015</p>
+    							</div>
+    							<div class="jouney__events-work">
+    								<h4 class="jouney__events-name">Gradute Secondary School</h4>
+    								<p class="jouney__events-para">And this is when i start to learn more difficult and news things, and comfortable things sometimes dont't appear much.</p>
+    							</div>
+    						</div>
+    					</li>
+    					<!-- Workout -->
+    					<li class="jouney__box-item">
+    						<span></span>
+    						<div class="jouney__events">
+    							<div class="jouney__events-date">
+    								<p class="jouney__events-data">August 2010</p>
+    							</div>
+    							<div class="jouney__events-work" style="margin-left: 30px">
+    								<h4 class="jouney__events-name">Gradute Primary School</h4>
+    								<p class="jouney__events-para">I had a good time in primary school, when i was comfortable.</p>
+    							</div>
+    						</div>
+    					</li>
+    				</ul>
+    			</div>
+    		</div>
+
+    		<!-- Around a goodboy life -->
+    		<div class="life">
+    			<div class="life__box">
+    				<div class="life__box-title">
+    					<h2 class="life__title-heading">Around my life</h2>
+    					<p class="life__title-description">Here, i will reveal to you some things in my life <br> Let's see what is it!</p>
+    				</div>
+
+    				<div class="row life__content">
+    					<div class="col col-third life__content-col">
+    						<div class="life__content-item" style="min-height: 326px">
+    							<i class="far fa-sigma life__content-icon"></i>
+    							<h4 class="life__content-name">Learning Math</h4>
+    							<p class="life__content-para">I love to learn math, because it's interesting and very practical.</p>
+    						</div>
+    					</div>
+
+    					<div class="col col-third life__content-col">
+    						<div class="life__content-item life__content--tablet">
+    							<i class="far fa-cauldron life__content-icon"></i>
+    							<h4 class="life__content-name">Cooking</h4>
+    							<p class="life__content-para">Whenever my parents are away, i always show off my cooking skill or sometimes just cook a meal for my parents.</p>
+    						</div>
+    					</div>
+
+    					<div class="col col-third life__content-col">
+    						<div class="life__content-item">
+    							<i class="fal fa-user-music life__content-icon"></i>
+    							<h4 class="life__content-name">Singing</h4>
+    							<p class="life__content-para">Although i'm not good at singing, but it helps me forget sadness and be more positive in life.</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+
+    		<!-- Feature -->
+    		<div class="favour">
+    			<div class="favour__heading">
+    				<h2 class="favour__heading-label">My lastest featured images</h2>
+    				<p class="favour__heading-description">Who are in extremely love with sweet things</p>
+    			</div>
+
+    			<div class="row favour__content">
+    				<div class="col col-third favour__content-col">
+    					<div class="favour__content-box">
+    						<div class="favour__content-item">
+    							<img src="./assets/image/closeeyes.jpg" class="favour__content-img">
+    							<a href="./assets/image/closeeyes.jpg" class="light">
+    								<img src="./assets/image/view-img.webp" class="favour__content-viewbtn" style="vertical-align: middle">
+    							</a>
+    						</div>
+    						<div class="favour__content-name" style="text-align: center; max-width: 340px">
+    							<h4 class="favour__content-title">Me with Art</h4>
+    							<p class="favour__content-des">Personal Photo</p>
+    						</div>
+    					</div>
+    				</div>
+
+    				<div class="col col-third favour__content-col">
+    					<div class="favour__content-box">
+    						<div class="favour__content-item">
+    							<img src="./assets/image/undertree.jpg" class="favour__content-img">
+    							<a href="./assets/image/undertree.jpg" class="light">
+    								<img src="./assets/image/view-img.webp" class="favour__content-viewbtn" style="vertical-align: middle">
+    							</a>
+    						</div>
+    						<div class="favour__content-name" style="text-align: center; max-width: 340px">
+    							<h4 class="favour__content-title">Me width Nature</h4>
+    							<p class="favour__content-des">Personal Photo</p>
+    						</div>
+    					</div>
+    				</div>
+
+    				<div class="col col-third favour__content-col">
+    					<div class="favour__content-box">
+    						<div class="favour__content-item">
+    							<img src="./assets/image/twofinger-mthu.jpg" class="favour__content-img">
+    							<a href="./assets/image/twofinger-mthu.jpg" class="light">
+    								<img src="./assets/image/view-img.webp" class="favour__content-viewbtn" style="vertical-align: middle">
+    							</a>
+    						</div>
+    						<div class="favour__content-name" style="text-align: center; max-width: 340px">
+    							<h4 class="favour__content-title">Sweets and Cutes</h4>
+    							<p class="favour__content-des">Personal Photo</p>
+    						</div>
+    					</div>
+    				</div>
+
+    				<div class="col col-third favour__content-col">
+    					<div class="favour__content-box">
+    						<div class="favour__content-item">
+    							<img src="./assets/image/lookintocamera.jpg" class="favour__content-img">
+    							<a href="./assets/image/lookintocamera.jpg" class="light">
+    								<img src="./assets/image/view-img.webp" class="favour__content-viewbtn" style="vertical-align: middle">
+    							</a>
+    						</div>
+    						<div class="favour__content-name" style="text-align: center; max-width: 340px">
+    							<h4 class="favour__content-title">Me with Art</h4>
+    							<p class="favour__content-des">Personal Photo</p>
+    						</div>
+    					</div>
+    				</div>
+
+    				<div class="col col-third favour__content-col">
+    					<div class="favour__content-box">
+    						<div class="favour__content-item">
+    							<img src="./assets/image/mthu-stone-chair.jpg" class="favour__content-img">
+    							<a href="./assets/image/mthu-stone-chair.jpg" class="light">
+    								<img src="./assets/image/view-img.webp" class="favour__content-viewbtn" style="vertical-align: middle">
+    							</a>
+    						</div>
+    						<div class="favour__content-name" style="text-align: center; max-width: 340px">
+    							<h4 class="favour__content-title">Me and Education</h4>
+    							<p class="favour__content-des">Personal Photo</p>
+    						</div>
+    					</div>
+    				</div>
+
+    				<div class="col col-third favour__content-col">
+    					<div class="favour__content-box">
+    						<div class="favour__content-item">
+    							<img src="./assets/image/athome.jpg" class="favour__content-img">
+    							<a href="./assets/image/athome.jpg" class="light">
+    								<img src="./assets/image/view-img.webp" class="favour__content-viewbtn" style="vertical-align: middle">
+    							</a>
+    						</div>
+    						<div class="favour__content-name" style="text-align: center; max-width: 340px">
+    							<h4 class="favour__content-title">Cutes Moment</h4>
+    							<p class="favour__content-des">Personal Photo</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+
+            <!-- Slider -->
+            <div class="background-slider" style="background-color: #f9f9ff">
+                <div class="slide-container row" style="width: 1170px; max-width: 100%; margin: 0 auto; padding: 120px 0">
+                    <div class="slide-img col col-full">
+                        <img src="" name="slide" width="1170" height="auto" style="border-radius: 20px; vertical-align: middle; max-width: 100%">
+                    </div>
+                </div>
+            </div>
+    	</div>
+
+    	<footer class="footer">
+    		<div class="footer__main row">
+    			<div class="col footer__main-col" style="width: 41.66667%">
+	    			<h3 class="footer__title">About Me</h3>
+	    			<p class="footer__paragraph">Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills.</p>
+	    			<p class="footer__nocopyright">Copyright ©2021 All rights reserved | This template is made with <i class="fa fa-heart-o"></i> by <a href="https://www.facebook.com/Phvm189">VietMinh</a></p>
+    			</div>
+    			<div class="col footer__main-col" style="width: 41.66667%">
+    				<h3 class="footer__title">Newsletter</h3>
+    				<p class="footer__paragraph">Stay updated with my latest trends</p>
+    				<form class="footer__form" >
+    					<input type="email" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address'" required class="footer__form-input">
+
+    					<input type="submit" name="" class="footer__form-submit">
+    				</form>
+    			</div>
+    			<div class="col footer__main-col" style="width: 16.66667%">
+    				<h3 class="footer__title">Follow Me</h3>
+    				<p class="footer__paragraph">Let us be social</p>
+    				<ul class="footer__social-list">
+    					<li class="footer__social-item">
+    						<a href="https://www.facebook.com/Phvm189" class="footer__social-link">
+    							<i class="fab fa-facebook footer__social-icon"></i>
+    						</a>
+    					</li>
+    					<li class="footer__social-item">
+    						<a href="https://www.instagram.com/_phvm__/" class="footer__social-link">
+    							<i class="fab fa-instagram footer__social-icon"></i>
+    						</a>
+    					</li>
+    				</ul>
+    			</div>
+    		</div>
+    	</footer>
+    </div>
+</body>
+</html>
